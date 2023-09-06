@@ -1,0 +1,136 @@
+* {
+    
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+
+}
+
+.section1 {
+    background-color: #c4c4c4;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section1 h3 {
+    font-size: 15px;
+    font-weight: 300; /* Espessura da fonte */
+    color:black;
+    padding: 10px; /* Espaçamento dos elementos */
+}
+
+.operations {
+    text-align: right;
+    overflow-wrap: break-word;
+    
+}
+
+.preview-operation {
+    color: #858585;
+    padding: 10px;
+
+}
+
+.current-operation {
+    color: black;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 5px;
+    padding: 10px;
+
+}
+
+.button-container button {
+    border: 1px solid transparent; 
+    border-radius: 0; 
+    height: 80px;
+    background-color: #adadad;
+    
+
+}
+
+.button-container .number {
+    background-color: #f3f3f3;
+
+}
+
+.button-container button:hover { /* HOVER= MUDAR DE COR AO PASSAR O CURSOR */
+   background-color: #bababa;
+   border-color: rgb(132, 130, 130);
+}
+
+.button-container .igual-button {
+    grid-column: span 2;
+    background-color: rgb(134, 191, 191);
+    
+}
+
+.button-container .igual-button:hover {
+    background-color: rgb(134, 191, 191);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .button-container .number {
+        background-color: green;
+        border-color: green;
+    }
+    
+    .calculadora {
+        background-color: black;
+
+    }
+
+    .calculadora h3 {
+        color: green;
+    }
+
+    .button-container .igual-button {
+        background-color: black;
+        color: white;
+        border-color: white;
+    }
+
+    .preview-operation {
+        color: green;
+        
+    }
+
+    .current-operation {
+        color: green;
+    }
+    
+    .button-container button {
+        background-color: black;
+        color: white;
+        border-color: white;
+    }
+
+
+}
